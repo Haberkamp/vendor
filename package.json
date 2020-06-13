@@ -5,7 +5,8 @@
 	"main": "index.js",
 	"scripts": {
 		"compile:tailwind": "tailwindcss build ./assets/css/all.css -o ./assets/dist/css/output.css",
-		"prettier": "./node_modules/.bin/prettier --config ./prettier.config.js --ignore-path ./.prettierignore --write ."
+		"prettier": "prettier --config ./prettier.config.js --ignore-path ./.prettierignore --write .",
+		"lint": "eslint --fix ."
 	},
 	"engines": {
 		"ghost-api": "v3"
@@ -30,6 +31,10 @@
 		"tailwindcss": "^1.4.6"
 	},
 	"devDependencies": {
+		"eslint": "^7.2.0",
+		"eslint-config-airbnb-base": "^14.2.0",
+		"eslint-config-prettier": "^6.11.0",
+		"eslint-plugin-import": "^2.21.2",
 		"prettier": "2.0.5"
 	}
 }
