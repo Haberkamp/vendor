@@ -1,3 +1,7 @@
+@tailwind base;
+
+@tailwind components;
+
 .kg-width-wide,
 .kg-width-full,
 .kg-gallery-container,
@@ -13,3 +17,5 @@
 .kg-bookmark-author,
 .kg-bookmark-publisher,
 .kg-bookmark-thumbnail {}
+
+@tailwind utilities;

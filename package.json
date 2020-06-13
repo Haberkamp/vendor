@@ -3,7 +3,9 @@
   "version": "0.0.0",
   "description": "a theme for ghost cms",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "compile:tailwind": "npx tailwindcss build ./assets/css/all.css -o ./assets/dist/css/output.css"
+  },
   "engines": {
     "ghost-api": "v3"
   },
@@ -20,5 +22,10 @@
     "url": "https://github.com/Haberkamp/vendor/issues"
   },
   "homepage": "https://github.com/Haberkamp/vendor#readme",
-  "keywords": ["ghost-theme"]
+  "keywords": [
+    "ghost-theme"
+  ],
+  "dependencies": {
+    "tailwindcss": "^1.4.6"
+  }
 }
