@@ -1,0 +1,15 @@
+# node modules
+node_modules/
+
+# npm related files and folders
+package.json
+package-lock.json
+
+# generated output
+dist/
+
+# miscellanious
+LICENSE
+
+# handelbar files (parser for handlbars is in alpah (link))
+*.hbs

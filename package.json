@@ -1,31 +1,35 @@
 {
-  "name": "vendor",
-  "version": "0.0.0",
-  "description": "a theme for ghost cms",
-  "main": "index.js",
-  "scripts": {
-    "compile:tailwind": "npx tailwindcss build ./assets/css/all.css -o ./assets/dist/css/output.css"
-  },
-  "engines": {
-    "ghost-api": "v3"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Haberkamp/vendor.git"
-  },
-  "author": {
-    "name": "Nils Haberkamp",
-    "email": "haberkamp.n@gmail.com"
-  },
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/Haberkamp/vendor/issues"
-  },
-  "homepage": "https://github.com/Haberkamp/vendor#readme",
-  "keywords": [
-    "ghost-theme"
-  ],
-  "dependencies": {
-    "tailwindcss": "^1.4.6"
-  }
+	"name": "vendor",
+	"version": "0.0.0",
+	"description": "a theme for ghost cms",
+	"main": "index.js",
+	"scripts": {
+		"compile:tailwind": "tailwindcss build ./assets/css/all.css -o ./assets/dist/css/output.css",
+		"prettier": "./node_modules/.bin/prettier --config ./prettier.config.js --ignore-path ./.prettierignore --write ."
+	},
+	"engines": {
+		"ghost-api": "v3"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Haberkamp/vendor.git"
+	},
+	"author": {
+		"name": "Nils Haberkamp",
+		"email": "haberkamp.n@gmail.com"
+	},
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/Haberkamp/vendor/issues"
+	},
+	"homepage": "https://github.com/Haberkamp/vendor#readme",
+	"keywords": [
+		"ghost-theme"
+	],
+	"dependencies": {
+		"tailwindcss": "^1.4.6"
+	},
+	"devDependencies": {
+		"prettier": "2.0.5"
+	}
 }

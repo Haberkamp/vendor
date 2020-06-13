@@ -16,6 +16,7 @@
 .kg-bookmark-icon,
 .kg-bookmark-author,
 .kg-bookmark-publisher,
-.kg-bookmark-thumbnail {}
+.kg-bookmark-thumbnail {
+}
 
 @tailwind utilities;
