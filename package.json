@@ -3,17 +3,22 @@
   "version": "0.0.0",
   "description": "a theme for ghost cms",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "scripts": {},
+  "engines": {
+    "ghost-api": "v3"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Haberkamp/vendor.git"
   },
-  "author": "Nils Haberkamp",
+  "author": {
+    "name": "Nils Haberkamp",
+    "email": "haberkamp.n@gmail.com"
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/Haberkamp/vendor/issues"
   },
-  "homepage": "https://github.com/Haberkamp/vendor#readme"
+  "homepage": "https://github.com/Haberkamp/vendor#readme",
+  "keywords": ["ghost-theme"]
 }
