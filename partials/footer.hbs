@@ -1,0 +1,18 @@
+<div class="grid footer__grid max-w-screen-xl md:mx-auto h-24 md:p-6">
+
+    <div class="h-full box-content bg-light-grey row-span-1 col-span-1 md:bg-white">
+        <img class="h-full mx-auto py-6" src="{{ asset 'images/logo/logo-dark.svg' }}" alt="Vendor text logo">
+    </div>
+
+    <div class="hidden md:block bg-gray-600 rounded">
+
+    </div>
+
+    <div class="w-full flex flex-center-all">
+        {{> footer-link text-content="Powered by" link-content="Ghost" link-url="https://ghost.org" target-blank="true" }}
+
+        <div class="mx-6 inline-block w-px h-12 bg-gray-600 rounded"></div>
+
+        {{> footer-link text-content="Made by" link-content="Nils" link-url="https://github.com/Haberkamp" target-blank="true" }}
+    </div>
+</div>

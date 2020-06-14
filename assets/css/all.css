@@ -19,3 +19,23 @@
 }
 
 @tailwind utilities;
+
+/* This utility is a shorthand class to center items inside a flex container
+ * vertically and horizontally
+ */
+
+.flex-center-all {
+	@apply justify-center items-center;
+}
+
+.footer__grid {
+	grid-template-rows: repeat(2, 6rem);
+	grid-template-columns: 100%;
+}
+
+@screen md {
+	.footer__grid {
+		grid-template-rows: 6rem;
+		grid-template-columns: 30% 1px 1fr;
+	}
+}

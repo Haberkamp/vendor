@@ -1,0 +1,14 @@
+<span class="text-gray-700">
+
+  {{ text-content }}
+
+  <a href="{{ link-url }}"
+    class="text-black italic hover:underline"
+    {{#if target-blank }}
+      target="_blank"
+    {{/if}}>
+
+    {{ link-content }}
+    
+  </a>
+</span>
