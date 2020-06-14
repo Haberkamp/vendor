@@ -3,8 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>{{ @site.title }}</title>
 
+    {{!-- Meta data for SEO --}}
+    <meta name="description" content="{{ @site.description }}">
+
+    {{!-- Favicon --}}
+    <link rel="shortcut icon" href="{{ @site.icon }}" type="image/x-icon">
+
+    {{!-- Importing styles --}}
     <link rel="stylesheet" href="{{ asset 'dist/css/output.css' }}">
 
     {{ ghost_head }}
