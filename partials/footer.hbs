@@ -1,7 +1,11 @@
 <div class="grid footer__grid max-w-screen-xl md:mx-auto h-24 md:p-6">
 
-    <div class="h-full box-content bg-light-grey row-span-1 col-span-1 md:bg-white">
-        <img class="h-full mx-auto py-6" src="{{ asset 'images/logo/logo-dark.svg' }}" alt="Vendor text logo">
+    <div class="h-full box-content bg-light-grey row-span-1 col-span-1 md:bg-white flex flex-center-all">
+            {{#if @site.logo }}
+                <img class="h-full py-6" src="{{ @site.logo }}" alt="Vendor text logo">
+            {{ else }}
+                <p>{{ @site.title }}</p>
+            {{/if}}
     </div>
 
     <div class="hidden md:block bg-gray-600 rounded">
