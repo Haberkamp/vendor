@@ -1,9 +1,27 @@
 <nav>
-  <button class="w-12 h-12 hover:bg-light-grey rounded cursor-pointer transition-color duration-75 ease-in-out"
+  <button class="w-12 h-12 hover:bg-light-grey rounded cursor-pointer transition-color duration-75 ease-in-out relative z-10"
     type="button">
-    
+
     <img src="{{ asset 'images/icons/hamburger.svg' }}"
       class="w-full h-full"
       alt="Hamburger icon">
   </button>
 </nav>
+
+<div class="absolute w-screen h-screen bg-white left-0 top-0 z-0">
+  <div class="container mx-auto px-8 py-4">
+
+    <h1 class="text-3xl mb-6">Navigation</h1>
+
+    <ul>
+      {{#foreach navigation }}
+        <li class="border-t border-solid border-gray-300">
+          <a href="{{ url }}"
+            class="block p-4 transition transition-transform duration-200 ease-in-out transform hover:translate-x-2 {{#if current }}italic{{/if}}">
+            {{ label }}
+          </a>
+        </li>
+      {{/foreach }}
+    </ul>
+  </div>
+</div>
