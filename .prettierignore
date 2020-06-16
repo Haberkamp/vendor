@@ -13,3 +13,7 @@ LICENSE
 
 # handelbar files (parser for handlbars is in alpah (link))
 *.hbs
+
+# ignore git and github reltated stuff
+.git/
+.github/
