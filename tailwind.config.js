@@ -6,4 +6,5 @@ module.exports = {
 			},
 		},
 	},
+	purge: ['./*.hbs', './partials/*.hbs'],
 }

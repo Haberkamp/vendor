@@ -9,7 +9,8 @@
 		"prettier:ci": "prettier --config ./prettier.config.js --ignore-path ./.prettierignore --check .",
 		"lint:write": "eslint --fix .",
 		"lint:ci": "eslint .",
-		"build:js": "parcel build ./assets/scripts/index.js -d ./assets/dist/scripts"
+		"build:js": "parcel build ./assets/scripts/index.js -d ./assets/dist/scripts",
+		"build:css": "parcel build ./assets/css/all.css -d ./assets/dist/css"
 	},
 	"engines": {
 		"ghost-api": "v3"
