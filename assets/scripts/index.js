@@ -1,3 +1,4 @@
-import NavigationToggler from './modules/NavigationToggler';
+import NavigationToggler from './modules/NavigationToggler'
 
-const navigationToggler = new NavigationToggler('Nils');
+// eslint-disable-next-line no-unused-vars
+const mainNavToggler = new NavigationToggler('#toggle', '#nav', 'is--openned')

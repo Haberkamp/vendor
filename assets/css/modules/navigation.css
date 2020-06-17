@@ -1,0 +1,3 @@
+.is--openned {
+	@apply transform -translate-y-full;
+}
