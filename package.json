@@ -8,7 +8,10 @@
 		"prettier:write": "prettier --config ./prettier.config.js --ignore-path ./.prettierignore --write .",
 		"prettier:ci": "prettier --config ./prettier.config.js --ignore-path ./.prettierignore --check .",
 		"lint:write": "eslint --fix .",
-		"lint:ci": "eslint ."
+		"lint:ci": "eslint .",
+		"build:js": "parcel build ./assets/scripts/index.js -d ./assets/dist/scripts",
+		"build:css": "parcel build ./assets/css/all.css -d ./assets/dist/css",
+		"build": "parcel build ./assets/scripts/index.js ./assets/css/all.css -d ./assets/dist/"
 	},
 	"engines": {
 		"ghost-api": "v3"
@@ -37,6 +40,7 @@
 		"eslint-config-airbnb-base": "^14.2.0",
 		"eslint-config-prettier": "^6.11.0",
 		"eslint-plugin-import": "^2.21.2",
+		"parcel-bundler": "^1.12.4",
 		"prettier": "2.0.5"
 	}
 }
