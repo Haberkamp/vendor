@@ -17,3 +17,6 @@ LICENSE
 # ignore git and github reltated stuff
 .git/
 .github/
+
+# parcel cache folders
+.cache/
