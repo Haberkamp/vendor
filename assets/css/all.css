@@ -39,3 +39,5 @@
 		grid-template-columns: 30% 1px 1fr;
 	}
 }
+
+@import './modules/navigation.css';

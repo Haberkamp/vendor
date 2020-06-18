@@ -1,0 +1,34 @@
+.fly-in,
+.fly-out {
+	animation-fill-mode: forwards;
+	animation-duration: 200ms;
+	animation-timing-function: ease-in-out;
+}
+
+.fly-in {
+	animation-name: fly-in;
+}
+
+.fly-out {
+	animation-name: fly-out;
+}
+
+@keyframes fly-in {
+	0% {
+		transform: translateY(-100%);
+	}
+
+	100% {
+		transform: translateY(0%);
+	}
+}
+
+@keyframes fly-out {
+	0% {
+		transform: translateY(0%);
+	}
+
+	100% {
+		transform: translateY(-100%);
+	}
+}
