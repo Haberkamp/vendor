@@ -11,7 +11,8 @@
 		"lint:ci": "eslint .",
 		"build:js": "parcel build ./assets/scripts/index.js -d ./assets/dist/scripts",
 		"build:css": "parcel build ./assets/css/all.css -d ./assets/dist/css",
-		"build": "parcel build ./assets/scripts/index.js ./assets/css/all.css -d ./assets/dist/"
+		"build": "parcel build ./assets/scripts/index.js ./assets/css/all.css -d ./assets/dist/",
+		"watch": "parcel watch ./assets/scripts/index.js ./assets/css/all.css -d ./assets/dist/"
 	},
 	"engines": {
 		"ghost-api": "v3"
