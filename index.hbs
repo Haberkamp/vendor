@@ -1,3 +1,9 @@
 {{!< default }}
 
 {{> hero-banner }}
+
+<div class="container mx-auto my-12 px-6">
+  {{#foreach posts }}
+    {{> post-card title=title }}
+  {{/foreach}}
+</div>
