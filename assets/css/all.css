@@ -1,44 +1,32 @@
-@tailwind base;
+@import './tailwindcss/base.css';
 
-@tailwind components;
+@import './base/text.css';
+@import './base/headings.css';
+@import './base/lists.css';
+@import './base/quote.css';
+@import './base/horizontal-line.css';
+@import './base/markdown.css';
 
-.kg-width-wide,
-.kg-width-full,
-.kg-gallery-container,
-.kg-gallery-row,
-.kg-gallery-image,
-.kg-bookmark-card,
-.kg-bookmark-content,
-.kg-bookmark-title,
-.kg-bookmark-description,
-.kg-bookmark-metadata,
-.kg-bookmark-icon,
-.kg-bookmark-author,
-.kg-bookmark-publisher,
-.kg-bookmark-thumbnail {
-}
+@import './base/ghost.css';
 
-@tailwind utilities;
+@import './tailwindcss/components.css';
 
-/* This utility is a shorthand class to center items inside a flex container
- * vertically and horizontally
- */
+/* Importing components */
+@import './components/gallery.css';
+@import './components/hero-banner.css';
+@import './components/image-card.css';
+@import './components/embed.css';
 
-.flex-center-all {
-	@apply justify-center items-center;
-}
+/* Importing layout components (e.g. footer or header) */
+@import './layout/footer.css';
 
-.footer__grid {
-	grid-template-rows: repeat(2, 6rem);
-	grid-template-columns: 100%;
-}
+/* Importing page specific styles */
+@import './pages/post.css';
 
-@screen md {
-	.footer__grid {
-		grid-template-rows: 6rem;
-		grid-template-columns: 30% 1px 1fr;
-	}
-}
+@import './tailwindcss/utilities.css';
 
-@import './modules/navigation.css';
-@import './modules/hero-banner.css';
+/* Importing custom tailwind utilities */
+@import './utilities/flex-center-all.css';
+
+/* Importing animations */
+@import './animations/fly.css';

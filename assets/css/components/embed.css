@@ -1,0 +1,58 @@
+/* Here are all the styles for embedds
+ * like YouTube Videos or Twitter Posts.
+ */
+
+.kg-embed-card {
+	@apply mb-4;
+}
+
+.kg-embed-card > iframe {
+	@apply max-w-full;
+}
+
+.kg-bookmark-card,
+.kg-bookmark-container {
+	@apply w-full;
+}
+
+.kg-bookmark-card {
+	@apply mb-4;
+}
+
+.kg-bookmark-container {
+	@apply flex flex-col transition-colors duration-75 border-2 border-light-grey rounded shadow-sm;
+}
+
+.kg-bookmark-container:hover {
+	@apply border-accent-light;
+}
+
+.kg-bookmark-thumbnail {
+	max-height: 230px;
+	@apply order-1 overflow-hidden;
+}
+
+.kg-bookmark-thumbnail img {
+	transform: translateY(-25%);
+}
+
+.kg-bookmark-content {
+	@apply order-2 p-4;
+}
+
+.kg-bookmark-title {
+	@apply font-semibold mb-1;
+}
+
+.kg-bookmark-description {
+	@apply mb-4;
+}
+
+.kg-bookmark-description,
+.kg-bookmark-publisher {
+	@apply text-gray-800 text-sm;
+}
+
+.kg-bookmark-icon {
+	@apply inline w-5 h-5 mr-2;
+}

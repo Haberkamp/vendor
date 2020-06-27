@@ -1,0 +1,12 @@
+.kg-image-card.kg-width-full {
+	@apply relative w-screen;
+	left: calc(-50vw + 50%);
+}
+
+.kg-image-card img {
+	@apply rounded-sm;
+}
+
+.kg-image-card figcaption {
+	@apply mt-1 text-center;
+}

@@ -1,0 +1,9 @@
+strong,
+b {
+	@apply font-bold;
+}
+
+em,
+i {
+	@apply italic;
+}

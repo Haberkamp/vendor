@@ -1,0 +1,24 @@
+.kg-gallery-container,
+.kg-gallery-row {
+	display: flex;
+}
+
+.kg-gallery-container {
+	@apply w-full max-w-5xl flex-col mx-auto;
+}
+
+.kg-gallery-row {
+	@apply flex-row justify-center;
+}
+
+.kg-gallery-image img {
+	@apply block m-0 w-full h-full;
+}
+
+.kg-gallery-row:not(:first-of-type) {
+	@apply mt-3;
+}
+
+.kg-gallery-image:not(:first-of-type) {
+	@apply ml-3;
+}

@@ -1,5 +1,5 @@
 /**
- * Variabless
+ * Variables
  */
 
 const colors = {

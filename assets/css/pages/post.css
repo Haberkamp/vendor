@@ -1,0 +1,5 @@
+.kg-image-card,
+.kg-gallery-container,
+.post-container p {
+	@apply mb-4;
+}

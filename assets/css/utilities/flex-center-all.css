@@ -1,0 +1,7 @@
+/* This utility is a shorthand class to center items inside a flex container
+ * vertically and horizontally
+ */
+
+.flex-center-all {
+	@apply justify-center items-center;
+}
