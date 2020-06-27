@@ -16,6 +16,7 @@
 @import './components/hero-banner.css';
 @import './components/image-card.css';
 @import './components/embed.css';
+@import './components/post-card.css';
 
 /* Importing layout components (e.g. footer or header) */
 @import './layout/footer.css';

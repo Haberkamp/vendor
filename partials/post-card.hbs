@@ -5,22 +5,22 @@
 
     <div class="px-6 py-4">
 
-      <div class="flex justify-between">
-        <a class="flex-1" href="{{ url }}">
-          <h3 class="text-xl font-semibold mt-0 mr-4 capitalize leading-tight">{{ title }}</h3>
+      <div class="relative mb-3 z-0">
+        <a href="{{ url }}">
+          <h3 class="text-xl font-semibold my-0 mr-12 capitalize leading-tight">{{ title }}</h3>
         </a>
 
-        {{#foreach authors }}
-          <a href="{{ url }}">
-            <img class="box-content w-10 h-10 rounded-full border-2 border-transparent hover:border-accent-light" src="{{ profile_image }}" alt="">
-          </a>
-        {{/foreach }}
+        <a class="text-accent text-sm hover:underline" href="{{ primary_author.url }}">{{ primary_author.name }}</a>
+
+        <a class="absolute top-0 right-0" href="{{ primary_author.url }}">
+          <img class="box-content w-10 h-10 rounded-full border-2 border-transparent hover:border-accent-light"
+            src="{{ primary_author.profile_image }}"
+            alt="">
+        </a>
       </div>
 
-      {{#foreach authors }}
-        <a class="block text-accent hover:underline" href="{{ url }}">{{ name }}</a>
-      {{/foreach }}
-
-      <p class="text-md">{{ excerpt }}</p>
+      <a href="{{ url }}">
+        <p class="text-md">{{ excerpt }}</p>
+      </a>
     </div>
 </div>
