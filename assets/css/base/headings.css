@@ -1,0 +1,32 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	@apply font-semibold mb-1;
+}
+
+h1 {
+	@apply mt-10 text-3xl;
+}
+
+h2 {
+	@apply mt-8 text-2xl;
+}
+
+h3 {
+	@apply mt-6 text-xl;
+}
+
+h4 {
+	@apply mt-4 text-lg;
+}
+
+h5 {
+	@apply mt-3 text-base;
+}
+
+h6 {
+	@apply mt-2 text-sm;
+}

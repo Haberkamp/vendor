@@ -1,0 +1,27 @@
+blockquote:not([class]) {
+	@apply relative mb-4 p-4 pl-8 rounded-sm bg-orange-100 italic text-gray-800 transition-shadow;
+}
+
+blockquote:not([class]):hover {
+	@apply shadow-sm;
+}
+
+blockquote:not([class]),
+blockquote:not([class])::before {
+	@apply duration-75;
+}
+
+blockquote:not([class])::before {
+	--padding: 0.75rem;
+	--padding-height: var(--padding) * 2;
+
+	content: '';
+	left: 1rem;
+	height: calc(100% - var(--padding-height));
+	top: var(--padding);
+	@apply absolute block w-1 bg-orange-200 rounded-full transition-colors;
+}
+
+blockquote:not([class]):hover::before {
+	@apply bg-orange-300;
+}
