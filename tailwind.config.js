@@ -10,6 +10,10 @@ const colors = {
 
 module.exports = {
 	theme: {
+		fontFamily: {
+			sans: ['Rubik', 'Helvetica', 'Arial', 'sans-serif'],
+			mono: ['Roboto Mono', 'monospace'],
+		},
 		extend: {
 			colors: {
 				'light-grey': colors.lightGrey,
