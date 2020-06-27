@@ -1,0 +1,26 @@
+<div class="w-full rounded mb-8 shadow-sm border-light-grey hover:border-accent-light border overflow-hidden">
+  <a href="{{ url }}">
+    <img src="{{ feature_image }}" alt="">
+  </a>
+
+    <div class="px-6 py-4">
+
+      <div class="flex justify-between">
+        <a class="flex-1" href="{{ url }}">
+          <h3 class="text-xl font-semibold mr-4 capitalize leading-tight">{{ title }}</h3>
+        </a>
+
+        {{#foreach authors }}
+          <a href="{{ url }}">
+            <img class="box-content w-10 h-10 rounded-full border-0 border-2 border-transparent hover:border-accent-light" src="{{ profile_image }}" alt="">
+          </a>
+        {{/foreach }}
+      </div>
+
+      {{#foreach authors }}
+        <a class="block text-accent hover:underline" href="{{ url }}">{{ name }}</a>
+      {{/foreach }}
+
+      <p class="text-md">{{ excerpt }}</p>
+    </div>
+</div>
