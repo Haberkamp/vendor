@@ -43,6 +43,12 @@ export default class NavigationToggler {
 			newClassAttribute = newClassAttribute.replace(this.collapseClass, '')
 		}
 
+		// set overflow hidden
+		const bodyClasses = document.body.getAttribute('class')
+		const newBodyClass = `${bodyClasses} overflow-hidden`
+
+		document.body.setAttribute('class', newBodyClass)
+
 		this.navigationElement.setAttribute('class', newClassAttribute)
 	}
 
@@ -59,6 +65,11 @@ export default class NavigationToggler {
 			// add collapse class
 			newClassAttribute = newClassAttribute.concat(' ', this.collapseClass)
 		}
+
+		// remove overflow hidden
+		const bodyClasses = document.body.getAttribute('class')
+		const newBodyClass = bodyClasses.replace('overflow-hidden', '')
+		document.body.setAttribute('class', newBodyClass)
 
 		this.navigationElement.setAttribute('class', newClassAttribute)
 	}
