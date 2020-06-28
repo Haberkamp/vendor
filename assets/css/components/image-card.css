@@ -8,5 +8,5 @@
 }
 
 .kg-image-card figcaption {
-	@apply mt-1 text-center;
+	@apply mt-1 text-center text-sm text-gray-700;
 }

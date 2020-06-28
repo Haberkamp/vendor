@@ -2,9 +2,14 @@
 
 {{#post }}
   <div class="post-container container px-6 mb-12 mx-auto">
-    <h1 class="my-1">{{ title }}</h1>
+    <h1 class="my-1 leading-9">{{ title }}</h1>
+
+    <p>Author: <a href="{{ primary_author.url }}">{{ primary_author.name }}</a></p>
+
+    <hr class="mt-3">
 
     {{ content }}
+
   </div>
 {{/post }}
 

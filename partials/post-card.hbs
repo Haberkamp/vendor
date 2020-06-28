@@ -6,11 +6,11 @@
     <div class="px-6 py-4">
 
       <div class="relative mb-3 z-0">
-        <a href="{{ url }}">
-          <h3 class="text-xl font-semibold my-0 mr-12 capitalize leading-tight">{{ title }}</h3>
+        <a class="hover:no-underline" href="{{ url }}">
+          <h3 class="text-xl font-semibold my-0 mr-16 capitalize leading-tight break-word">{{ title }}</h3>
         </a>
 
-        <a class="text-accent text-sm hover:underline" href="{{ primary_author.url }}">{{ primary_author.name }}</a>
+        <a class="text-sm" href="{{ primary_author.url }}">{{ primary_author.name }}</a>
 
         <a class="absolute top-0 right-0" href="{{ primary_author.url }}">
           <img class="box-content w-10 h-10 rounded-full border-2 border-transparent hover:border-accent-light"
@@ -19,8 +19,8 @@
         </a>
       </div>
 
-      <a href="{{ url }}">
-        <p class="text-md">{{ excerpt }}</p>
+      <a class="text-md text-black hover:no-underline" href="{{ url }}">
+        {{ excerpt characters="120" }}{{#unless custom_excerpt}}...{{/unless}}
       </a>
     </div>
 </div>

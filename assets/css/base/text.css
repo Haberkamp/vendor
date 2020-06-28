@@ -7,3 +7,19 @@ em,
 i {
 	@apply italic;
 }
+
+a {
+	@apply text-accent;
+}
+
+a:hover {
+	@apply underline;
+}
+
+p {
+	@apply text-black;
+}
+
+p:hover {
+	@apply no-underline;
+}
